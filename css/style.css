@@ -1,0 +1,154 @@
+* {
+  margin: 0 auto;
+  font-size: 14px;
+  color: #333;
+}
+.clear-fix {
+  clear: both;
+}
+
+.title {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.title:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.title:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  width: 80px;
+  height: 5px;
+  background: #f9b500;
+  z-index: 1;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-relative {
+  position: relative;
+}
+.text-yellow {
+  color: #f9b500;
+}
+a {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+b {
+  font-weight: 700;
+  transition: all 0.2s;
+}
+a:hover {
+  color: #f9b500;
+}
+b:hover {
+  color: #f9b500;
+}
+.app {
+  width: 1200px;
+}
+@media (max-width: 1199.98px) {
+  .app {
+    width: 922px;
+  }
+}
+@media (max-width: 991.98) {
+  .app {
+    width: 768px;
+  }
+}
+@media (max-width: 767.98) {
+  .app {
+    width: 576px;
+  }
+}
+@media (max-width: 575.98) {
+  .app {
+    width: calc(100% - 30px);
+    padding: 0 15px;
+  }
+}
+.article-title {
+  padding-top: 20px;
+}
+.article-title a {
+  font-size: 20px;
+  font-weight: 700;
+}
+.info-bar {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+.info-bar li {
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 25px;
+}
+.text-muted {
+  color: #888;
+}
+b {
+  font-weight: 700;
+  transition: all 0.2s;
+}
+a:hover {
+  color: #f9b500;
+}
+b:hover {
+  color: #f9b500;
+}
+.header-logo {
+  float: left;
+  margin: 30px 0;
+}
+.header-meno {
+  float: right;
+}
+.header-meno-item {
+  display: inline;
+}
+.header-meno-item-link {
+  padding: 0 15px;
+  line-height: 80px;
+  font-weight: 700;
+  color: #333 !important;
+}
+@media (max-width: 991.98px) {
+  .header-logo {
+    height: 15px;
+    margin: 32px 0;
+  }
+  .header-meno-item-link {
+    padding: 0 5px;
+  }
+}
+.show {
+  display: inline-block !important;
+}
+
+@media (max-width: 767.98px) {
+  .header-meno-burger {
+    display: inline-block;
+  }
+  .header-meno {
+    display: none;
+    width: 100%;
+  }
+  .header-meno-item {
+    display: block;
+    border-bottom: 1px solid #cecece;
+  }
+}
